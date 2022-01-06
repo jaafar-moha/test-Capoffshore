@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+}
+.Registration{
+    margin: 50PX auto;
+    max-width: 800px;
+    box-shadow: 2px 2px 2px 2px rgba(1, 0, 0, 0.2);
+    padding: 0px 0px 0px 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
+    margin-right: 0px;
+
+}
+.image{
+   width: 100%;
+   height: auto;
+   margin: 0;
+   padding: 0;
+}
+.title{
+    position: absolute;
+    padding: 30px;
+}
+.title .logo{
+    display: flex;
+}
+.title .logo h5{
+    font-size: 15px;
+    margin-left: 10px;
+    color: #4e2a91;
+    font-family: 'Merriweather', serif;
+}
+.title h3{
+    font-family: 'Merriweather', serif;
+    color: #4e2a91;
+    margin: 20px;
+}
+.container .row{
+    margin-top: 100px;
+    padding-top: 20px;
+}
+.contact-form .form-field{
+    position: relative;
+    margin: 5px 0px;
+}
+.contact-form .form-field small{
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+}
+.contact-form .form-field.error small{
+    visibility: visible;
+    color: #ff5160 ;
+}
+.contact-form .form-field.success input{
+    border-color: rgb(117, 184, 51);
+}
+.contact-form .form-field.error input{
+    border-color: #ff5160;
+}
+
+.contact-form .input-text{
+    display: block;
+    width: 90%;
+    height: 36px;
+    border-width:0 0 1px 0 ;
+    border-color: #435180;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text:focus{
+    outline: none;
+}
+.contact-form .input-text::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-form .label{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(190, 189, 189);
+    cursor: text;
+}
+.contact-form .submit-btn{
+    display: block;
+    margin: 30px auto 30px auto;
+    background-color: #435180;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    border: none;
+    border-radius: 40px;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 5px 10px 18px #acabab;
+}
+.contact-form .submit-btn:hover{
+    background-color: #435180c5;
+}
+@media only screen and (max-width: 600px){
+    .Registration{
+        /* max-width: 500px; */
+        max-height: 450px;
+        
+    }
+    .title{
+        padding: 8px;
+    }
+    .title h3{
+        font-size: 15px;
+    }
+    .container{
+        max-height: 400px;
+    }
+    .container .row{
+        padding-top: 0;
+        max-width: 50%;
+        margin-top: 85px;
+    }
+    .contact-form .form-field{
+        height: 10%;
+    }
+    .contact-form .input-text{
+        height: 12px;
+        font-size: 12px;
+    }
+
+    .contact-form .label{
+        font-size: 12px;
+    }
+    .contact-form .submit-btn{
+        margin: 0;
+        height: 30px;
+        width: 80px;
+        font-size: 12px;
+
+}
+}
+@media only screen and (max-width: 320px){
+    .container{
+        display: block;
+    }
+}
